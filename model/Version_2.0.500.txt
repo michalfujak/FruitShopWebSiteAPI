@@ -1,0 +1,87 @@
+##################################################################################################################
+##################################################################################################################
+##################################################################################################################
+###############################      PHP ENTERPRISE Framework OOP 2.0.500      ###################################
+##################################################################################################################
+##################################################################################################################
+##################################################################################################################
+
+Creat by: Programmer Michal Fujak
+
+Version: 2.0.500 ( Marec )  [ 06.03.2019 ] [ min PHP 5.2 ]
+add files:
++             protecteds/Config.php
++             protecteds/ConfigEntityGlobal.php
+SQL MANAGER
++             sql/SqlCreateTable.php
++             sql/SqlEntity.php
++             sql/SqlVariable.php
++             sql/SqlManager.php
+AUTO LOADER [ .vendor ]
++             composer.php
++             vendor/AutoLoader.php
++             vendor/AutoLoaderList.php
+LANGUAGE [ SK ]
++             language/sk/exception/ExceptionListVariable.php
+
+
+Version: 1.9.200 rc-1 (Januar - Leden) [ 06.01.2019 ]
+delete files:
+-             tools/tools_sql_manager/sql_manager.php
+
+add files:
+
+edit files:
+
+
+Version: 1.8.500 (November)
+add files:
++             modul/exception/Exception_read_sql.php
++             modul/json/json_class.php
+edit files:
+-             modul/sql_variable_manager.php [1.2.000 [edited]] final-alpha1
+-             lanquage/sk/exception.php
+
+Version: 1.8.000 (November)
+add files:
++             modul/exception/Exception_read_sql.php
++             modul/log/log_manager.php
+edit files:
+-             modul/sql_variable_manager.php
+
+Version: 1.7.000 (November)
+add files:
++             modul/sql_variable_manager.php
+edit files:
+-             n/a
+
+Version: 1.6.500 (Oktober)
+add files:
++             modul/monitor/Monitor_db.php
+edit files
+-             modul/driver/Connect_mysqli.php
+
+Version: 1.4.000 (Oktober)
+add files:
++             modul package
++             modul/db/Alternative_db.php
++             modul/db/Functions_db.php
++             modul/driver/Connect_mysqli.php
++             modul/config/Config.php
++             modul/sessions/Sessions.php
++             modul/tables/tables_sql.php
+edit files:
+-             n/a
+
+Version: 1.1.000 (September)
+add files:
++             install/schema/create_table-mysqli.sql
++             install/schema/crone_mysqli.sql
++             install/schema/insert_table_mysqli.sql
++             install/schema/update_table_mysqli.sql
++             tools/monitor_agent/monitor_agent/tools.php
+------------  Files for Android connect   ------------
++             package ucp +++
++             view/styles/teal_light (template)
+
+
