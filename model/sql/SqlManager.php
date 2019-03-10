@@ -40,7 +40,7 @@ class SqlManager extends \model\sql\SqlVariable
     private $sessionColumn;
     private $firstColumn;
     private $lastColumn;
-    private $table;
+    public $table;
     /**
      * @variable
      */

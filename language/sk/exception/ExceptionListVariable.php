@@ -34,6 +34,12 @@ class ExceptionListVariable
     public $exceptionListGlobal;
 
     /**
+     * @var $exceptionListUsers
+     */
+    public $exceptionListUsers;
+
+
+    /**
      * ExceptionListVariable constructor.
      */
     function __construct()
@@ -68,6 +74,15 @@ class ExceptionListVariable
             'EXCEPTION_ERROR_CODE_10034'                                            => '10034',
             'EXCEPTION_ERROR_MESSAGE_10034'                                         => 'Kód chyby [ 10034 ], Parameter vo funkcii Sqlmanager->setRowFirstValue(lastColumn) nie je nastavený. Prosím nastavte daní parameter, inak funkcia nebude správne pracovať.',
             'EXCEPTION_ERROR_LINK_10034'                                            => '///10034///',
+        );
+        // Initializable exception for users
+        $this->exceptionListUsers = array(
+            'EXCEPTION_USERS_ERROR_CODE_10010'                                      => '10010',
+            'EXCEPTION_USERS_ERROR_MESSAGE_10010'                                   => 'Nastala neočakávaná chyba pri spracovaní požiadavky pre SQL server. Kód chyby [ 10010 ]',
+            'EXCEPTION_USERS_ERROR_LINK_10010'                                      => '///10010///',
+            'EXCEPTION_USERS_ERROR_CODE_10011'                                      => '10011',
+            'EXCEPTION_USERS_ERROR_MESSAGE_10011'                                   => 'Kód chyby [ 10011 ], Parameter ( $phone ) nie je nastavený. Prosím nastavte daní parameter, inak funkcia nebude správne pracovať. ',
+            'EXCEPTION_USERS_ERROR_LINK_10011'                                      => '///10011///',
         );
     }
 }

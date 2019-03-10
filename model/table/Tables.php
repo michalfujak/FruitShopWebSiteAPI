@@ -22,6 +22,7 @@ class Tables
     const TABLE_CONFIG = "config";
     const TABLE_SQL_MANAGER = "sql_manager";
     const TABLE_MONITOR = "monitor_agent";
+    const TABLE_USERS = "users";
 
     /**
      * @Tables constructor.

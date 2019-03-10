@@ -63,6 +63,9 @@ class AutoLoaderList
                                  'Model\Sql\SqlVariable'                                      => 'model/sql/SqlVariable',
                                  'Model\Sql\SqlManager'                                       => 'model/sql/SqlManager',
                                  'Model\Sql\SqlCreateTable'                                   => 'model/sql/SqlCreateTable',
+                                 // Controllers adds
+                                 'Controllers\MappingUsers'                                   => 'controllers/MappingUsers',
+                                 'Controllers\Users'                                          => 'controllers/Users',
         );
         /**
          * @array
@@ -87,6 +90,8 @@ class AutoLoaderList
                                 'Model\Sql\SqlManager'                                       => '../model/sql/SqlManager',
                                 'Model\Sql\SqlCreateTable'                                   => '../model/sql/SqlCreateTable',
                                  // Controllers adds
+                                'Controllers\MappingUsers'                                   => '../controllers/MappingUsers',
+                                'Controllers\Users'                                          => '../controllers/Users',
         );
     }
 }

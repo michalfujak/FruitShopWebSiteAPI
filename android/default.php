@@ -15,6 +15,7 @@
 namespace android;
 
 
+use controllers\Users;
 use model\protecteds\Config;
 use model\protecteds\ConfigEntityGlobal;
 use model\driver\ConfigConnect;
@@ -36,12 +37,23 @@ $objLoad = new AutoLoader();
 $objLoad->autoLoader(Config::$phpFruitShopRootPack, "android", Config::$phpEx);
 // Obj SqlManager
 $objSqlManager = new SqlManager(Tables::TABLE_MONITOR);
+$objUser = new Users();
 // SET COUNT
 $objSqlManager->setRowCountId("id_monitor");
 
 print "Version DB: " . Config::infoVersion();
 print "<br /><br /><br />";
 print "Celkovy pocet riadkov v tabulke monitor: " . $objSqlManager->getRowCountId();
+print "<br /><br /><br />";
+if($objUser->checkUserExists("2121") == true)
+{
+    print "Uzivatel existuje!<br />";
+    print "Class name:  [ " . $objUser->infoClassNameStatic() . " ] ";
+}
+else
+{
+    print "Uzivatel neexistuje!";
+}
 print "<br /><br /><br />";
 print "<p " . 'style="text-align: center; width:100%"' . ">" . Config::FRAMEWORK_NAME . "</p>";
 

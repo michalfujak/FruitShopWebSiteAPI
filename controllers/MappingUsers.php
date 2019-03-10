@@ -19,25 +19,27 @@ class MappingUsers
     /**
      * @static variable
      */
-    public static $id;
-    public static $phone;
-    public static $firstname;
-    public static $lastname;
-    public static $address;
-    public static $email;
-    public static $birthdate;
-    public static $register_from;
-    public static $timer;
+    public static $id = "id_users";
+    public static $phone = "phone_users";
+    public static $firstname = "firstname_users";
+    public static $lastname = "lastname_users";
+    public static $address = "address_users";
+    public static $email = "email_users";
+    public static $birthdate = "birthdate_users";
+    public static $register_from = "registration_users";
+    public static $timer = "timer_users";
     /**
      * @const variable
      */
-
+    const columnPrivateKey = "phone_users";
+    const class_namePrivate = "Users";
 
     /**
      * MappingUsers constructor.
      */
     public function __construct()
     {
+
     }
 
     /**
