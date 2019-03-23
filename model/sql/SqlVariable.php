@@ -50,6 +50,7 @@ class SqlVariable extends \model\sql\SqlEntity
      private $full;
      private $outer;
      private $value;
+     private $values;
      private $join;
      private $between;
      private $delete;
@@ -90,6 +91,7 @@ class SqlVariable extends \model\sql\SqlEntity
         $this->setFull("FULL");
         $this->setOuter("OUTER");
         $this->setValue("VALUE");
+        $this->setValues("VALUES");
         $this->setJoin("JOIN");
         $this->setBetween("BETWEEN");
         $this->setDelete("DELETE");
@@ -661,7 +663,7 @@ class SqlVariable extends \model\sql\SqlEntity
     }
 
     /**
-     * @getvalue
+     * @getValue
      */
     public function getValue()
     {
@@ -674,6 +676,31 @@ class SqlVariable extends \model\sql\SqlEntity
     public function getValueTrim()
     {
         return self::$trim . $this->value . self::$trim;
+    }
+
+    /**
+     * @setValues
+     * @param
+     */
+    public function setValues($values)
+    {
+        $this->values = $values;
+    }
+
+    /**
+     * @getValues
+     */
+    public function getValues()
+    {
+        return $this->values;
+    }
+
+    /**
+     * @getValuesTrim
+     */
+    public function getValuesTrim()
+    {
+        return self::$trim . $this->values . self::$trim;
     }
 
     /**

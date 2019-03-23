@@ -49,6 +49,12 @@ class MappingUsers
     {
         // TODO: Implement __destruct() method.
     }
+
+    /**
+     * @Get
+     * and
+     * @Set Table USERS
+     */
 }
 
 ?>

@@ -45,10 +45,11 @@ print "Version DB: " . Config::infoVersion();
 print "<br /><br /><br />";
 print "Celkovy pocet riadkov v tabulke monitor: " . $objSqlManager->getRowCountId();
 print "<br /><br /><br />";
-if($objUser->checkUserExists("2121") == true)
+if($objUser->checkUserExists("+944517465") == true)
 {
     print "Uzivatel existuje!<br />";
     print "Class name:  [ " . $objUser->infoClassNameStatic() . " ] ";
+    print var_dump($objUser->registerNewUsers("+944517465", "Michal", "Fujak", "Cadca u Sihelnika 715", "michalfujak005@gmail.com", "1983-09-16", "Web", time()));
 }
 else
 {

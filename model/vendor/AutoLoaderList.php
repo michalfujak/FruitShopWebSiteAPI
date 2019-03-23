@@ -63,6 +63,9 @@ class AutoLoaderList
                                  'Model\Sql\SqlVariable'                                      => 'model/sql/SqlVariable',
                                  'Model\Sql\SqlManager'                                       => 'model/sql/SqlManager',
                                  'Model\Sql\SqlCreateTable'                                   => 'model/sql/SqlCreateTable',
+                                  // Json class
+                                 'Model\Json\MappingJson'                                     => 'model/json/MappingJson',
+                                 'Model\Json\Json'                                            => 'model/json/Json',
                                  // Controllers adds
                                  'Controllers\MappingUsers'                                   => 'controllers/MappingUsers',
                                  'Controllers\Users'                                          => 'controllers/Users',
@@ -89,6 +92,9 @@ class AutoLoaderList
                                 'Model\Sql\SqlVariable'                                      => '../model/sql/SqlVariable',
                                 'Model\Sql\SqlManager'                                       => '../model/sql/SqlManager',
                                 'Model\Sql\SqlCreateTable'                                   => '../model/sql/SqlCreateTable',
+                                 // Json class
+                                'Model\Json\MappingJson'                                     => '../model/json/MappingJson',
+                                'Model\Json\Json'                                            => '../model/json/Json',
                                  // Controllers adds
                                 'Controllers\MappingUsers'                                   => '../controllers/MappingUsers',
                                 'Controllers\Users'                                          => '../controllers/Users',

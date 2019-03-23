@@ -83,6 +83,18 @@ class ExceptionListVariable
             'EXCEPTION_USERS_ERROR_CODE_10011'                                      => '10011',
             'EXCEPTION_USERS_ERROR_MESSAGE_10011'                                   => 'Kód chyby [ 10011 ], Parameter ( $phone ) nie je nastavený. Prosím nastavte daní parameter, inak funkcia nebude správne pracovať. ',
             'EXCEPTION_USERS_ERROR_LINK_10011'                                      => '///10011///',
+            'EXCEPTION_USERS_ERROR_CODE_10020'                                      => '10020',
+            'EXCEPTION_USERS_ERROR_MESSAGE_10020'                                   => 'Nastala neočakávaná chyba pri spracovaní požiadavky pre SQL server. Kód chyby [ 10020 ]',
+            'EXCEPTION_USERS_ERROR_LINK_10020'                                      => '///10020///',
+            'EXCEPTION_USERS_ERROR_CODE_10022'                                      => '10022',
+            'EXCEPTION_USERS_ERROR_MESSAGE_10022'                                   => 'Nastala neočakávaná chyba pri spracovaní požiadavky pre SQL server. Kód chyby [ 10022 ]',
+            'EXCEPTION_USERS_ERROR_LINK_10022'                                      => '///10022///',
+            'EXCEPTION_USERS_ERROR_CODE_10024'                                      => '10024',
+            'EXCEPTION_USERS_ERROR_MESSAGE_10024'                                   => 'Kód chyby [ 10024 ], Vstupný parameter je nulový. Prosím skontrolovať volanie funkcii.',
+            'EXCEPTION_USERS_ERROR_LINK_10024'                                      => '///10024///',
+            'EXCEPTION_USERS_ERROR_CODE_10026'                                      => '10026',
+            'EXCEPTION_USERS_ERROR_MESSAGE_10026'                                   => 'Nastala neočakávaná chyba pri spracovaní požiadavky pre SQL server. Kód vyjimky [ 10026 ]',
+            'EXCEPTION_USERS_ERROR_LINK_10026'                                      => '///10026///',
         );
     }
 }

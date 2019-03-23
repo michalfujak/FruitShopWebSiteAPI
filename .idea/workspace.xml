@@ -7,8 +7,7 @@
       <change beforePath="$PROJECT_DIR$/controllers/MappingUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/MappingUsers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/Users.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/language/sk/exception/ExceptionListVariable.php" beforeDir="false" afterPath="$PROJECT_DIR$/language/sk/exception/ExceptionListVariable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/sql/SqlManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/sql/SqlManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/table/Tables.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/table/Tables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/sql/SqlVariable.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/sql/SqlVariable.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/vendor/AutoLoaderList.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/vendor/AutoLoaderList.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,28 +19,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/sql/SqlManager.php">
+        <entry file="file://$PROJECT_DIR$/model/vendor/AutoLoaderList.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1258">
-              <caret line="109" column="49" lean-forward="true" selection-start-line="109" selection-start-column="49" selection-end-line="109" selection-end-column="49" />
+            <state relative-caret-position="841">
+              <caret line="67" column="98" selection-start-line="67" selection-start-column="98" selection-end-line="67" selection-end-column="98" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/vendor/AutoLoaderList.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
-              <caret line="93" column="119" lean-forward="true" selection-start-line="93" selection-start-column="119" selection-end-line="93" selection-end-column="119" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/Users.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
-              <caret line="122" column="22" lean-forward="true" selection-start-line="122" selection-start-column="22" selection-end-line="122" selection-end-column="22" />
+            <state relative-caret-position="918">
+              <caret line="123" column="32" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
               <folding>
                 <element signature="e#6#393#0#PHP" expanded="true" />
                 <element signature="e#420#468#0#PHP" expanded="true" />
@@ -51,26 +41,17 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/language/sk/exception/ExceptionListVariable.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="685">
-              <caret line="83" column="15" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="48" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/model/driver/DriverConnect.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/MappingUsers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+            <state relative-caret-position="782">
+              <caret line="56" column="7" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/driver/DriverConnect.php">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -85,11 +66,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/android/default.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="50" column="70" selection-start-line="50" selection-start-column="70" selection-end-line="50" selection-end-column="70" />
+            <state relative-caret-position="654">
+              <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
               <folding>
                 <element signature="e#6#381#0#PHP" expanded="true" />
                 <element signature="e#405#427#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/driver/ConfigConnect.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/android/checkExistsUserFile.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1156">
+              <caret line="68" column="55" lean-forward="true" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
+              <folding>
+                <element signature="e#6#395#0#PHP" expanded="true" />
+                <element signature="e#483#505#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,11 +112,15 @@
         <option value="$PROJECT_DIR$/model/sql/SqlManager.php" />
         <option value="$PROJECT_DIR$/model/users/MappingUsers.php" />
         <option value="$PROJECT_DIR$/model/users/Users.php" />
-        <option value="$PROJECT_DIR$/model/vendor/AutoLoaderList.php" />
-        <option value="$PROJECT_DIR$/controllers/MappingUsers.php" />
+        <option value="$PROJECT_DIR$/model/sql/SqlVariable.php" />
         <option value="$PROJECT_DIR$/language/sk/exception/ExceptionListVariable.php" />
         <option value="$PROJECT_DIR$/android/default.php" />
+        <option value="$PROJECT_DIR$/controllers/MappingUsers.php" />
+        <option value="$PROJECT_DIR$/model/json/Json.php" />
+        <option value="$PROJECT_DIR$/model/vendor/AutoLoaderList.php" />
+        <option value="$PROJECT_DIR$/model/json/MappingJson.php" />
         <option value="$PROJECT_DIR$/controllers/Users.php" />
+        <option value="$PROJECT_DIR$/android/checkExistsUserFile.php" />
       </list>
     </option>
   </component>
@@ -133,7 +136,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,6 +197,12 @@
               <item name="FruitShopRestAPIWebSite" type="b2602c69:ProjectViewProjectNode" />
               <item name="FruitShopRestAPIWebSite" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="json" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FruitShopRestAPIWebSite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FruitShopRestAPIWebSite" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="protecteds" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -213,18 +221,13 @@
               <item name="FruitShopRestAPIWebSite" type="b2602c69:ProjectViewProjectNode" />
               <item name="FruitShopRestAPIWebSite" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FruitShopRestAPIWebSite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FruitShopRestAPIWebSite" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="vendor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -232,6 +235,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -271,17 +275,30 @@
       <workItem from="1552139264529" duration="4283000" />
       <workItem from="1552234672385" duration="6884000" />
       <workItem from="1552248502121" duration="5148000" />
+      <workItem from="1552308399079" duration="681000" />
+      <workItem from="1552320094289" duration="9663000" />
+      <workItem from="1552419239428" duration="963000" />
+      <workItem from="1552429116945" duration="2350000" />
+      <workItem from="1552483702326" duration="1730000" />
+      <workItem from="1552676863607" duration="2525000" />
+      <workItem from="1552940145696" duration="768000" />
+      <workItem from="1553025545809" duration="1230000" />
+      <workItem from="1553162637854" duration="1078000" />
+      <workItem from="1553207521310" duration="679000" />
+      <workItem from="1553278727409" duration="8727000" />
+      <workItem from="1553356905035" duration="5142000" />
+      <workItem from="1553371752965" duration="3732000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38055000" />
+    <option name="totallyTimeSpent" value="77323000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29317698" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2585288" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -364,21 +381,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/model/users/Users.php" />
+    <entry file="file://$PROJECT_DIR$/model/users/MappingUsers.php" />
     <entry file="file://$PROJECT_DIR$/model/sql/SqlVariable.php">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="93" column="35" selection-start-line="93" selection-start-column="35" selection-end-line="93" selection-end-column="35" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/driver/ConfigConnect.php">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/model/comment_struct">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="11" lean-forward="true" selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/json/Json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+          <folding>
+            <element signature="e#6#384#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/json/MappingJson.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="23" column="70" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/sql/SqlManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="109" column="49" selection-start-line="109" selection-start-column="49" selection-end-line="109" selection-end-column="49" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/protecteds/Config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="34" column="43" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="48" />
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="48" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/driver/DriverConnect.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/install/schema/create_table_mysqli.sql">
       <provider selected="true" editor-type-id="text-editor">
@@ -387,59 +435,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/users/Users.php">
+    <entry file="file://$PROJECT_DIR$/model/driver/ConfigConnect.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/language/sk/exception/ExceptionListVariable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="102" column="20" lean-forward="true" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
-          <folding>
-            <element signature="e#7#394#0#PHP" expanded="true" />
-            <element signature="e#421#452#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="674">
+          <caret line="95" column="175" selection-start-line="95" selection-start-column="175" selection-end-line="95" selection-end-column="175" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/users/MappingUsers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#6#400#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/model/driver/DriverConnect.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/model/vendor/AutoLoaderList.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="93" column="119" lean-forward="true" selection-start-line="93" selection-start-column="119" selection-end-line="93" selection-end-column="119" />
+        <state relative-caret-position="841">
+          <caret line="67" column="98" selection-start-line="67" selection-start-column="98" selection-end-line="67" selection-end-column="98" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/MappingUsers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+        <state relative-caret-position="782">
+          <caret line="56" column="7" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/sql/SqlManager.php">
+    <entry file="file://$PROJECT_DIR$/controllers/Users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="109" column="49" lean-forward="true" selection-start-line="109" selection-start-column="49" selection-end-line="109" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/language/sk/exception/ExceptionListVariable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="83" column="15" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="48" />
+        <state relative-caret-position="918">
+          <caret line="123" column="32" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
+          <folding>
+            <element signature="e#6#393#0#PHP" expanded="true" />
+            <element signature="e#420#468#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/android/default.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="50" column="70" selection-start-line="50" selection-start-column="70" selection-end-line="50" selection-end-column="70" />
+        <state relative-caret-position="654">
+          <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
           <folding>
             <element signature="e#6#381#0#PHP" expanded="true" />
             <element signature="e#405#427#0#PHP" expanded="true" />
@@ -447,13 +484,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/Users.php">
+    <entry file="file://$PROJECT_DIR$/android/checkExistsUserFile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="122" column="22" lean-forward="true" selection-start-line="122" selection-start-column="22" selection-end-line="122" selection-end-column="22" />
+        <state relative-caret-position="1156">
+          <caret line="68" column="55" lean-forward="true" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
           <folding>
-            <element signature="e#6#393#0#PHP" expanded="true" />
-            <element signature="e#420#468#0#PHP" expanded="true" />
+            <element signature="e#6#395#0#PHP" expanded="true" />
+            <element signature="e#483#505#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
