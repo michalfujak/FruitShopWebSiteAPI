@@ -36,8 +36,6 @@ $objLoad->autoLoader(Config::$phpFruitShopRootPack, "index", Config::$phpEx);
 $objSqlMan = new SqlManager(Tables::TABLE_MONITOR);
 $objSqlMan->setRowCountId("id_list_monitor");
 
-print "InfoFramework version: " . Config::infoVersion();
-print "<br /><br /><br />";
-print "Table[Monitor]->id_list [Count]: " . $objSqlMan->getRowCountId();
+print "<h8>FRUIT - SHOP API</h8>"
 
 ?>

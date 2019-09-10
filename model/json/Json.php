@@ -16,6 +16,7 @@ namespace model\json;
 
 use model\json\MappingJson;
 
+
 class Json extends MappingJson
 {
     /**
@@ -37,7 +38,7 @@ class Json extends MappingJson
      */
     public function JsonEncode($param)
     {
-        return json_encode($param);
+        return json_encode($param, JSON_UNESCAPED_UNICODE);
     }
 
     /**
@@ -46,7 +47,7 @@ class Json extends MappingJson
      */
     public function JsonDecode($param)
     {
-        return json_decode($param);
+        return json_decode($param, JSON_UNESCAPED_UNICODE);
     }
 
 

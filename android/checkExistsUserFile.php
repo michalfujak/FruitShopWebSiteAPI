@@ -42,25 +42,24 @@ $lang = $objLang;
 /**
  * @Set active SqlManager
  */
-$objSqlManager->setRowCountId(Users::$phone);
-$objSqlManager->setRowFirstValue(Users::$firstname);
 
 /**
  * @variable response
  */
 $response = array();
+
 if(isset($_POST['phone']))
 {
     $phone = substr($_POST['phone'], 1);
     if($objUsers->checkUserExists($phone))
     {
         $response['exists'] = TRUE;
-        print $objJson->JsonEncode($response['exists']);
+        print $objJson->JsonEncode($response);
     }
     else
     {
         $response['exists'] = FALSE;
-        print $objJson->JsonEncode($response['exists']);
+        print $objJson->JsonEncode($response);
     }
 }
 else
@@ -69,14 +68,5 @@ else
     print $objJson->JsonEncode($response['error_msg']);
 }
 
-
-
-
-
-
-print "<br /><br /><br />";
-print "<p " . 'style="text-align: center; width:100%"' . ">" . Config::FRAMEWORK_NAME . "</p>";
-print "<br /><br />";
-print "<p " . 'style="text-align: center; width:100%"' . ">" . $objJson->JsonInfoPrint() . "</p>";
 
 ?>

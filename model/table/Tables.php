@@ -23,6 +23,8 @@ class Tables
     const TABLE_SQL_MANAGER = "sql_manager";
     const TABLE_MONITOR = "monitor_agent";
     const TABLE_USERS = "users";
+    const TABLE_BANNERS = "banners";
+    const TABLE_MENU = "menu";
 
     /**
      * @Tables constructor.

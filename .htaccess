@@ -1,0 +1,36 @@
+#
+# Michal Edit
+#
+<Files "config.php">
+Order Allow,Deny
+Deny from All
+</Files>
+##################################################################################
+####                         SEO   Autor: Michal Fujak                        ####
+##################################################################################
+RewriteEngine On
+#
+#
+#
+RewriteBase /
+#
+#
+#
+RewriteRule ^uvod\.html$ /default.php  [QSA,L,NC]
+#
+#Prepisanie dynamickej url...
+RewriteRule ^.*-stage([0-9]+)\.html$ /default.php?menu=$1 [L]   #text-m1.html
+#RewriteRule ^.*-s([0-9]+)-.*-k([0-9]+)\.html$ /default.php?id_page=$1&id_kategorie=$2 [L]
+#RewriteRule ^.*-s([0-9]+)-.*-k([0-9]+)-.*-l([0-9]+)\.html$ /default.php?id_page=$1&id_kategorie=$2&id_limit=$3 [L]         #TVAR www.domena.sk/hodnota1-s1-hodnota2-k2-hodnota3-l3.html
+#
+# UCP
+#
+#RewriteRule ^.*-ucp([0-9]+)\.html$ /ucp.php?mode=$1 [L] 
+
+#ErrorDocument 400 /error.php?error=400
+#ErrorDocument 401 /error.php?error=401
+ErrorDocument 403 /error.php?error=403
+ErrorDocument 404 /error.php?error=404
+#ErrorDocument 500 /error.php?error=500
+
+

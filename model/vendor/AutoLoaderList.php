@@ -69,6 +69,8 @@ class AutoLoaderList
                                  // Controllers adds
                                  'Controllers\MappingUsers'                                   => 'controllers/MappingUsers',
                                  'Controllers\Users'                                          => 'controllers/Users',
+                                 'Controllers\MappingBannners'                                => 'controllers/MappingBanners',
+                                 'Controllers\Banners'                                        => 'controllers/Banners',
         );
         /**
          * @array
@@ -85,6 +87,7 @@ class AutoLoaderList
                                  // Language
                                  // 'Language\SK\Common'                                         => '',
                                 'Language\SK\Exception\Expception.class'                     => '../language/sk/exception/ExceptionListVariable',
+                                'Language\SK\Android\Common.php'                             => '../language/sk/android/common',
                                  // 'Language\SK\Pm'                                             => '',
                                  // 'Language\SK\Styles'                                         => '',
                                  // SQL Manager
@@ -98,6 +101,10 @@ class AutoLoaderList
                                  // Controllers adds
                                 'Controllers\MappingUsers'                                   => '../controllers/MappingUsers',
                                 'Controllers\Users'                                          => '../controllers/Users',
+                                'Controllers\MappingBannners'                                => '../controllers/MappingBanners',
+                                'Controllers\Banners'                                        => '../controllers/Banners',
+                                'Controllers\MappingMenu'                                    => '../controllers/MappingMenu',
+                                'Controllers\Menu'                                           => '../controllers/Menu',
         );
     }
 }

@@ -38,6 +38,16 @@ class ExceptionListVariable
      */
     public $exceptionListUsers;
 
+    /**
+     * @var $exceptionListBanner
+     */
+    public $exceptionListBanner;
+
+    /**
+     * @var $exceptionListMenu
+     */
+    public $exceptionListMenu;
+
 
     /**
      * ExceptionListVariable constructor.
@@ -95,6 +105,31 @@ class ExceptionListVariable
             'EXCEPTION_USERS_ERROR_CODE_10026'                                      => '10026',
             'EXCEPTION_USERS_ERROR_MESSAGE_10026'                                   => 'Nastala neočakávaná chyba pri spracovaní požiadavky pre SQL server. Kód vyjimky [ 10026 ]',
             'EXCEPTION_USERS_ERROR_LINK_10026'                                      => '///10026///',
+            'EXCEPTION_USERS_ERROR_CODE_10030'                                      => '10030',
+            'EXCEPTION_USERS_ERROR_MESSAGE_10030'                                   => 'Nastala neočakávaná chyba pri spracovaní požiadavky pre SQL server. Kód chyby [ 10030 ]',
+            'EXCEPTION_USERS_ERROR_LINK_10030'                                      => '///10030///',
+            'EXCEPTION_USERS_ERROR_CODE_10031'                                      => '10031',
+            'EXCEPTION_USERS_ERROR_MESSAGE_10031'                                   => 'Kód chyby [ 10031 ], Parameter ( $phone ) nie je nastavený. Prosím nastavte daní parameter, inak funkcia nebude správne pracovať. ',
+            'EXCEPTION_USERS_ERROR_LINK_10031'                                      => '///10031///',
+        );
+        // Banner
+        $this->exceptionListBanner = array(
+            'EXCEPTION_BANNER_ERROR_CODE_10010'                                     => '10010',
+            'EXCEPTION_BANNER_ERROR_MESSAGE_10010'                                  => 'Nastala neočakávaná chyba pri spracovaní požiadavky pre SQL server. Kód chyby [ 10010 ]',
+            'EXCEPTION_BANNER_ERROR_LINK_10010'                                     => '///10010///',
+            'EXCEPTION_BANNER_ERROR_CODE_10012'                                     => '10012',
+            'EXCEPTION_BANNER_ERROR_MESSAGE_10012'                                  => 'Nastala neočakávaná chyba pri spracovaní požiadavky pre SQL server. Kód chyby [ 10012 ]',
+            'EXCEPTION_BANNER_ERROR_LINK_10012'                                     => '///10012///',
+        );
+
+        // Menu or Category
+        $this->exceptionListMenu = array(
+            'EXCEPTION_MENU_ERROR_CODE_10010'                                       => '10010',
+            'EXCEPTION_MENU_ERROR_MESSAGE_10010'                                    => 'Nastala neočakávaná chyba pri spracovaní požiadavky pre SQL server. Kód chyby [ 10010 ]',
+            'EXCEPTION_MENU_ERROR_LINK_10010'                                       => '///10010///',
+            'EXCEPTION_MENU_ERROR_CODE_10012'                                       => '10012',
+            'EXCEPTION_MENU_ERROR_MESSAGE_10012'                                    => 'Nastala neočakávaná chyba pri spracovaní požiadavky pre SQL server. Kód chyby [ 10012 ]',
+            'EXCEPTION_MENU_ERROR_LINK_10012'                                       => '///10012///',
         );
     }
 }

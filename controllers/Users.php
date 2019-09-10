@@ -26,6 +26,7 @@ class Users extends MappingUsers
      * @variable
      */
     public $result;
+    public $result2;
     public $row;
     public $sql;
 
@@ -78,9 +79,9 @@ class Users extends MappingUsers
                 $this->objSqlmanager->getStarTrim() .
                 $this->objSqlmanager->getFromTrim() .
                 $this->objSqlmanager->table .
-                $this->objSqlmanager->getWhereTrim() . " " . $this->checkUserExistsColumn() . "= :" . $this->checkUserExistsColumn() . "";
+                $this->objSqlmanager->getWhereTrim() . " " . Users::$phone . "= :" . Users::$phone . "";
             $this->result = $this->objStmt->prepare($this->sql);
-            $this->result->bindParam(':' . $this->checkUserExistsColumn(), $phone, \PDO::PARAM_STR);
+            $this->result->bindParam(':' . Users::$phone, $phone, \PDO::PARAM_STR);
             if(!$this->result)
             {
                 print $this->lang['EXCEPTION_USERS_ERROR_MESSAGE_10010'];
@@ -99,7 +100,6 @@ class Users extends MappingUsers
         catch(\Exception $exc)
         {
             $this->response['error_exc'] = "Chybove hlasenie: " . $exc->getMessage() . " : " . $this->lang['EXCEPTION_USERS_ERROR_MESSAGE_10011'];
-            return 10011;
         }
         unset($this->result);
         unset($this->sql);
@@ -183,16 +183,16 @@ class Users extends MappingUsers
                                  $this->objSqlmanager->getFromTrim() .
                                  $this->objSqlmanager->table .
                                  $this->objSqlmanager->getWhereTrim() . " " . $this->checkUserExistsColumn() . "= :" . $this->checkUserExistsColumn() . "";
-                    $this->result = $this->objStmt->prepare($this->sql);
-                    if($this->result)
+                    $this->result2 = $this->objStmt->prepare($this->sql);
+                    if(!$this->result2)
                     {
                         // Error connect SQL server 2 check control sql
                         return 10022;
                     }
-                    $this->result->bindParam(":" . $this->checkUserExistsColumn(), $phone, \PDO::PARAM_STR);
-                    $this->result->execute();
+                    $this->result2->bindParam(":" . $this->checkUserExistsColumn(), $phone, \PDO::PARAM_STR);
+                    $this->result2->execute();
                     // return value when object
-                    return $this->result->fetch(\PDO::FETCH_ASSOC);
+                    return $this->result2->fetch(\PDO::FETCH_ASSOC);
                 }
                 else
                 {
@@ -204,11 +204,55 @@ class Users extends MappingUsers
                 // parameter $phone is empty
                 return 10024;
             }
+
         }
         catch(\Exception $exp)
         {
             // Global exception error connect
             return 10026;
+        }
+        unset($this->sql);
+        unset($this->result);
+        unset($this->result2);
+    }
+
+    /**
+     * @getInformationUser(param)
+     * @param $user
+     */
+    public function getInformationUser($user)
+    {
+        try
+        {
+            // Load user data, phone and name informations.
+            $this->sql = $this->objSqlmanager->getSelectTrim() .
+                $this->objSqlmanager->getStarTrim() .
+                $this->objSqlmanager->getFromTrim() .
+                $this->objSqlmanager->table .
+                $this->objSqlmanager->getWhereTrim() . " " . Users::$phone . "= :" . Users::$phone . " ";
+            $this->result = $this->objStmt->prepare($this->sql);
+            $this->result->bindParam(':' . Users::$phone, $user, \PDO::PARAM_STR);
+            // Blocked error
+            if(!$this->result)
+            {
+                // Error SQL inject
+                print $this->lang['EXCEPTION_USERS_ERROR_MESSAGE_10030'];
+            }
+            if($this->result->execute())
+            {
+                $user = $this->result->fetch(\PDO::FETCH_ASSOC);
+                return $user;
+            }
+            else
+            {
+                return NULL;
+            }
+
+        }
+        catch(\PDOException $e)
+        {
+            // Exception
+            print $this->lang['EXCEPTION_USERS_ERROR_MESSAGE_10031'];
         }
         unset($this->sql);
         unset($this->result);

@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS config
      values_con VARCHAR(255) NOT NULL DEFAULT '',
      help_con VARCHAR(255) NOT NULL DEFAULT 'help_info_automatic',
      special_code_permission INTEGER(10) NOT NULL DEFAULT 1,
-     comment_values text NOT NULL DEFAULT ' Comments! ',
+     comment_values VARCHAR(255) NOT NULL DEFAULT ' Comments! ',
      PRIMARY KEY(name_con),
      UNIQUE(id)
 )    ENGINE=MyISAM DEFAULT CHARACTER SET 'utf8' COLLATE 'utf8_slovak_ci';
@@ -69,6 +69,32 @@ CREATE TABLE IF NOT EXISTS users
      PRIMARY KEY(phone_users),
      UNIQUE(email_users)
 )    ENGINE=MyISAM DEFAULT CHARACTER SET 'utf8' COLLATE 'utf8_slovak_ci';
+
+#
+#    Banners [.table]
+#
+CREATE TABLE IF NOT EXISTS banners
+(
+     id INTEGER(10) NOT NULL,
+     name_ VARCHAR(50) NOT NULL DEFAULT 'Deafault name banner Fruit - Shop',
+     link VARCHAR(255) NOT NULL DEFAULT '',
+     values_special VARCHAR(255) NOT NULL DEFAULT '',
+     comment VARCHAR(255) NOT NULL DEFAULT ' Comments! ',
+     PRIMARY KEY(id),
+     UNIQUE(link)
+)    ENGINE=MyISAM DEFAULT CHARACTER SET 'utf8' COLLATE 'utf8_slovak_ci';
+
+#
+#    Menu
+#
+CREATE TABLE IF NOT EXISTS menu
+(
+    id_cat INTEGER(10) NOT NULL AUTO_INCREMENT,
+    name_cat text NOT NULL,
+    link_cat text NOT NULL,
+    comment_cat VARCHAR(255) NOT NULL DEFAULT ' Comments! ',
+    PRIMARY KEY (id_cat)
+)   ENGINE=MyISAM DEFAULT CHARACTER SET 'utf8' COLLATE 'utf8_slovak_ci';
 
 
 
