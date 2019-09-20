@@ -28,8 +28,8 @@ class MappingBanners
     /**
      * @const variables
      */
-    public static $bannerLimit = "limit";
-    public static $bannerValue = 10;
+    public static $bannerLimitName = "limit";
+    public static $bannerLimitValue = 5;
     /**
      * @const variable
      */

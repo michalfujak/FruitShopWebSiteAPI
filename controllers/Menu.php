@@ -64,7 +64,10 @@ class Menu extends MappingMenu
         try
         {
             $this->sql = $this->sqlManager->getSelectTrim() .
-                $this->sqlManager->getStarTrim() .
+                self::$id . ', ' .
+                self::$name . ', ' .
+                self::$link . ', ' .
+                self::$comment . ' ' .
                 $this->sqlManager->getFromTrim() .
                 $this->sqlManager->table . " " .
                 $this->sqlManager->getOrderByTrim() . self::$id .

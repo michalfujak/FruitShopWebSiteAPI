@@ -67,18 +67,22 @@ class Banners extends MappingBanners
         try
         {
             $this->sql = $this->sqlManager->getSelectTrim() .
-                $this->sqlManager->getStarTrim() .
+                self::$id . ', ' .
+                self::$name . ', ' .
+                self::$special_value . ', ' .
+                self::$link . ', ' .
+                self::$comment . ', ' .
                 $this->sqlManager->getFromTrim() .
                 $this->sqlManager->table . " " .
                 $this->sqlManager->getOrderByTrim() . self::$id .
-                $this->sqlManager->getLimitTrim() . ":" . self::$bannerLimit;
+                $this->sqlManager->getLimitTrim() . ":" . self::$bannerLimitName;
             $this->result = $this->objStmt->prepare($this->sql);
             // print var_dump($this->result);
             if(!$this->result)
             {
                 print $this->lang['EXCEPTION_BANNER_ERROR_MESSAGE_10010'];
             }
-            $this->result->bindValue(":" . self::$bannerLimit, self::$bannerValue, \PDO::PARAM_INT);
+            $this->result->bindValue(":" . self::$bannerLimitName, self::$bannerLimitValue, \PDO::PARAM_INT);
             $this->result->execute();
             $this->banners = array();
             while($item = $this->result->fetch(\PDO::FETCH_ASSOC))

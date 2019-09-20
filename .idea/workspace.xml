@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae85f521-91d4-4fc9-a34e-d33e8a381760" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/checkExistsUserFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/android/checkExistsUserFile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/schema/create_table_mysqli.sql" beforeDir="false" afterPath="$PROJECT_DIR$/install/schema/create_table_mysqli.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/schema/insert_table_mysqli.sql" beforeDir="false" afterPath="$PROJECT_DIR$/install/schema/insert_table_mysqli.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/sk/exception/ExceptionListVariable.php" beforeDir="false" afterPath="$PROJECT_DIR$/language/sk/exception/ExceptionListVariable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/json/Json.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/json/Json.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/table/Tables.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/table/Tables.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/vendor/AutoLoaderList.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/vendor/AutoLoaderList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/Banners.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/Banners.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/MappingBanners.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/MappingBanners.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/Menu.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -129,6 +122,12 @@
       <workItem from="1568058721824" duration="1631000" />
       <workItem from="1568065157114" duration="1220000" />
       <workItem from="1568131645191" duration="10649000" />
+      <workItem from="1568290056844" duration="1780000" />
+      <workItem from="1568575398680" duration="712000" />
+      <workItem from="1568662256989" duration="1535000" />
+      <workItem from="1568831378422" duration="652000" />
+      <workItem from="1568885905745" duration="1937000" />
+      <workItem from="1568998278399" duration="1047000" />
     </task>
     <servers />
   </component>
